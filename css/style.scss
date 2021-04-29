@@ -3,33 +3,33 @@
 
 .container {
     width: 79%;
-    margin: 0 auto;
+    margin: $zero auto;
 }
 h2, h3 {
    color: $headingColor;
 }
 .flex {
-    display: flex;
+    display: $flex;
     justify-content: $center;
     align-items: $center;
 }
 //HEADER
 .header {
-    display: flex;
+    display: $flex;
     flex-direction: column;
     align-items: $center;
     .menu {
         width: 40%;
         margin-left: 2.2%;
         .navig {
-            display: flex;
+            display: $flex;
             justify-content: $center;
-            font-size: 0;
+            font-size: $zero;
             .navig__item {
                 font-size: 1rem;
                 height: 65px;
                 a {
-                    padding: 30% 0;
+                    padding: 30% $zero;
                     width: $bodySize;
                     text-align: $center;
                     font-size: 1.1rem;
@@ -37,7 +37,7 @@ h2, h3 {
                     text-decoration: none;
                 }
                 &:hover {
-                    border-radius: 0 0 5px 5px;
+                    border-radius: $zero $zero $radius $radius;
                     background: $headingColor;
                     a {
                         color: #fff3cd;
@@ -67,7 +67,7 @@ h2, h3 {
     .container {
         .logo {
             width: 40%;
-            display: flex;
+            display: $flex;
             flex-direction: column;
             align-items: $center;
             div {
@@ -82,7 +82,7 @@ h2, h3 {
                 }
             }
             h1 {
-                padding: $marding * 6.7 0;
+                padding: $marding * 6.7 $zero;
                 margin-bottom: $marding * 8;
                 margin-right: $marding;
                 font-size: 2.8rem;
@@ -95,14 +95,14 @@ h2, h3 {
 }
 //MAIN
 .main__top {
-    display: flex;
+    display: $flex;
     flex-direction: column;
     align-items: $center;
     border-top: $border;
     border-bottom: $border;
     h2 {
         margin-top: $marding * 9;
-        padding: $marding * 6 0 $marding * 4.5 0;
+        padding: $marding * 6 $zero $marding * 4.5 $zero;
         font-size: 1.8rem;
         text-align: $center;
         font-weight: bold;
@@ -111,19 +111,19 @@ h2, h3 {
         font-size: 1.1rem;
         font-weight: 400;
         text-align: $center;
-        color: #8b8989;
+        color: $parColor;
         padding-bottom: $marding * 12;
         line-height: 36px;
     }
 }
 .gallery {
-    display: flex;
+    display: $flex;
     flex-direction: column;
     margin-bottom: $marding * 2;
     .gallery__heading {
-        display: flex;
+        display: $flex;
         width: $bodySize;
-        margin: 18px 0 16px 4px;
+        margin: 18px $zero 16px 4px;
         padding-bottom: $marding * 6.5;
         justify-content: space-between;
         h3 {
@@ -140,11 +140,11 @@ h2, h3 {
         }
     }
     .gallery__images {
-        display: flex;
+        display: $flex;
         flex-direction: column;
         margin-bottom: $marding * 5;
         .gallery__images-line {
-            display: flex;
+            display: $flex;
             justify-content: $center;
             margin-bottom: $marding * 8;
             a {
@@ -157,13 +157,13 @@ h2, h3 {
             }
         }
         .gallery__images-line:last-of-type {
-            margin: 0;
+            margin: $zero;
         }
     }
 }
 .portfolio {
-    border-bottom: 0;
-    display: flex;
+    border-bottom: $zero;
+    display: $flex;
     flex-direction: column;
     align-items: $center;
     border-bottom: $border;
@@ -171,21 +171,21 @@ h2, h3 {
     .portfolio__button {
         width: 24.5%;
         height: $marding * 7.5;
-        border-radius: 5px;
-        display: flex;
+        border-radius: $radius;
+        display: $flex;
         align-items: $center;
         background: #df6267;
         a {
             text-decoration: none;
             color: white;
-            padding: 8% 0;
+            padding: 8% $zero;
             text-align: $center;
             width: $bodySize;
             font-size: 1.1rem;
         }
     }
     h2 {
-        margin: $marding * 2.2 0 $marding * 4.4 0;
+        margin: $marding * 2.2 $zero $marding * 4.4 $zero;
         font-size: 1.6rem;
         text-align: $center;
         font-weight: bold;
@@ -198,7 +198,7 @@ h2, h3 {
     }
     
     p.special {
-        color: #8b7d6b;
+        color: $parColor;
         margin-bottom: $marding * 2.5;
     }
    
@@ -206,7 +206,7 @@ h2, h3 {
 .portfolio:last-of-type {
     margin-top: $marding * 7.5;
     h2 {
-        margin: $marding * 2.2 0 $marding * 2.7 0;
+        margin: $marding * 2.2 $zero $marding * 2.7 $zero;
         font-size: 1.6rem;
         text-align: $center;
         font-weight: bold;
@@ -217,16 +217,16 @@ h2, h3 {
     }
 }
 .footer {
-    display: flex;
+    display: $flex;
     flex-direction: column;
     align-items: $center;
     .footer__list {
-        display: flex;
+        display: $flex;
         width: $bodySize;
         justify-content: $center;
-        margin: $marding * 6.8 0 $marding * 6 0;
+        margin: $marding * 6.8 $zero $marding * 6 $zero;
         .footer__list-item {
-            display: flex;
+            display: $flex;
             justify-content: $center;
             width: 9.2%;
             a {
@@ -243,7 +243,7 @@ h2, h3 {
         }
     }
     p {
-        margin: $marding 0 $marding * 7 0;
+        margin: $marding $zero $marding * 7 $zero;
     }
 }
 //Adaptive laptops
@@ -251,16 +251,16 @@ h2, h3 {
     .header {
         .menu {
             width: 60%;
-            margin: 0;
+            margin: $zero;
         }
     }
     .footer {
         .footer__list {
             .footer__list-item {
-                padding: 0;
+                padding: $zero;
                 width: 15%;
                 a {
-                    padding: 0;
+                    padding: $zero;
                     font-size: 1.1rem;
                 }
             }
@@ -284,12 +284,12 @@ h2, h3 {
     }
     .gallery {
         .gallery__images {
-            display: flex;
+            display: $flex;
             flex-direction: row;
             justify-content: $center;
             .gallery__images-line {
-                display: flex;
-                margin: 0;
+                display: $flex;
+                margin: $zero;
                 justify-content: $center;
                 flex-direction: column;
                 align-items: $center;
@@ -312,7 +312,7 @@ h2, h3 {
     }
     .gallery {
         .gallery__heading {
-            display: flex;
+            display: $flex;
             flex-direction: column;
             justify-content: $center;
             align-items: $center;
