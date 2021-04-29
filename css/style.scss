@@ -116,6 +116,7 @@ h2, h3 {
         line-height: 36px;
     }
 }
+//GALLERY
 .gallery {
     display: $flex;
     flex-direction: column;
@@ -161,6 +162,7 @@ h2, h3 {
         }
     }
 }
+//PORTFOLIO
 .portfolio {
     border-bottom: $zero;
     display: $flex;
@@ -216,6 +218,7 @@ h2, h3 {
         line-height: $marding * 4;
     }
 }
+//FOOTER
 .footer {
     display: $flex;
     flex-direction: column;
