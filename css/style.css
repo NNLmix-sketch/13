@@ -209,6 +209,14 @@ h2, h3 {
     color: #8b7d6b;
     margin-bottom: 25px; }
 
+.portfolio:last-of-type {
+  margin-top: 75px; }
+  .portfolio:last-of-type h2 {
+    margin: 22px 0 27px 0;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold; }
+
 .portfolio:last-of-type h2 {
   color: black; }
 
@@ -220,7 +228,7 @@ h2, h3 {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 65px 0 60px 0; }
+    margin: 78px 0 60px 0; }
     .footer .footer__list .footer__list-item {
       padding: 0 1.4%;
       width: 6.3%; }

@@ -181,7 +181,6 @@ h2, h3 {
     .portfolio__button {
         width: 24.5%;
         height: 75px;
-        // margin-top: 50px;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -214,6 +213,15 @@ h2, h3 {
     }
    
 }
+.portfolio:last-of-type {
+    margin-top: 75px;
+    h2 {
+        margin: 22px 0 27px 0;
+        font-size: 1.6rem;
+        text-align: center;
+        font-weight: bold;
+    }
+}
 .portfolio:last-of-type h2 {
     color: black;
 }
@@ -225,7 +233,7 @@ h2, h3 {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: 65px 0 60px 0;
+        margin: 78px 0 60px 0;
         .footer__list-item {
             padding: 0 1.4%;
             width: 6.3%;
