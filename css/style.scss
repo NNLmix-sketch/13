@@ -170,6 +170,19 @@ h2, h3 {
     align-items: $center;
     border-bottom: $border;
     margin-top: $marding * 7;
+    &:last-of-type {
+        margin-top: $marding * 7.5;
+        h2 {
+            margin: $marding * 1.2 $zero $marding * 2.7 $zero;
+            font-size: 1.6rem;
+            text-align: $center;
+            font-weight: bold;
+            color: black;
+        }
+        p {
+            line-height: $marding * 4;
+        }
+    }
     .portfolio__button {
         width: 24.5%;
         height: $marding * 7.5;
@@ -206,9 +219,9 @@ h2, h3 {
    
 }
 .portfolio:last-of-type {
-    margin-top: $marding * 7.5;
+    margin-top: $marding * 7.9;
     h2 {
-        margin: $marding * 2.2 $zero $marding * 2.7 $zero;
+        margin: $marding * 1.2 $zero $marding * 2.7 $zero;
         font-size: 1.6rem;
         text-align: $center;
         font-weight: bold;
@@ -291,11 +304,8 @@ h2, h3 {
             flex-direction: row;
             justify-content: $center;
             .gallery__images-line {
-                display: $flex;
                 margin: $zero;
-                justify-content: $center;
                 flex-direction: column;
-                align-items: $center;
                 a {
                     width: 45vw;
                     img {
@@ -315,10 +325,7 @@ h2, h3 {
     }
     .gallery {
         .gallery__heading {
-            display: $flex;
             flex-direction: column;
-            justify-content: $center;
-            align-items: $center;
             h3 {
                 padding-bottom: $marding * 2;
             }

@@ -173,6 +173,16 @@ h2, h3 {
   align-items: center;
   border-bottom: 2px solid #d2d2d2;
   margin-top: 70px; }
+  .portfolio:last-of-type {
+    margin-top: 75px; }
+    .portfolio:last-of-type h2 {
+      margin: 12px 0 27px 0;
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: bold;
+      color: black; }
+    .portfolio:last-of-type p {
+      line-height: 40px; }
   .portfolio .portfolio__button {
     width: 24.5%;
     height: 75px;
@@ -202,9 +212,9 @@ h2, h3 {
     margin-bottom: 25px; }
 
 .portfolio:last-of-type {
-  margin-top: 75px; }
+  margin-top: 79px; }
   .portfolio:last-of-type h2 {
-    margin: 22px 0 27px 0;
+    margin: 12px 0 27px 0;
     font-size: 1.6rem;
     text-align: center;
     font-weight: bold;
@@ -261,11 +271,8 @@ h2, h3 {
     flex-direction: row;
     justify-content: center; }
     .gallery .gallery__images .gallery__images-line {
-      display: flex;
       margin: 0;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center; }
+      flex-direction: column; }
       .gallery .gallery__images .gallery__images-line a {
         width: 45vw; }
         .gallery .gallery__images .gallery__images-line a img {
@@ -275,10 +282,7 @@ h2, h3 {
     width: 100%; }
 
   .gallery .gallery__heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: column; }
     .gallery .gallery__heading h3 {
       padding-bottom: 20px; }
   .gallery .gallery__images {
