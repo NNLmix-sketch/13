@@ -4,10 +4,14 @@
 .container {
     width: 79%;
     margin: 0 auto;
-    
 }
 h2, h3 {
-   color: #3f3f3f;
+   color: $headingColor;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 //HEADER
 .header {
@@ -23,21 +27,18 @@ h2, h3 {
             font-size: 0;
             .navig__item {
                 font-size: 1rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 height: 65px;
                 a {
                     padding: 30% 0;
-                    width: 100%;
+                    width: $bodySize;
                     text-align: center;
                     font-size: 1.1rem;
-                    color: #3f3f3f;
+                    color: $headingColor;
                     text-decoration: none;
                 }
                 &:hover {
                     border-radius: 0 0 5px 5px;
-                    background: #3f3f3f;
+                    background: $headingColor;
                     a {
                         color: #fff3cd;
                     }
@@ -64,9 +65,6 @@ h2, h3 {
         }
     }
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         .logo {
             width: 40%;
             display: flex;
@@ -75,9 +73,6 @@ h2, h3 {
             div {
                 width: 175px;
                 height: 175px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 border-radius: 50%;
                 background: #df6267;
                 margin-top: 170px;
@@ -98,7 +93,6 @@ h2, h3 {
         }
     }
 }
-
 //MAIN
 .main__top {
     display: flex;
@@ -112,7 +106,6 @@ h2, h3 {
         font-size: 1.8rem;
         text-align: center;
         font-weight: bold;
-        color: #3f3f3f;
     }
     p {
         font-size: 1.1rem;
@@ -129,6 +122,7 @@ h2, h3 {
     margin-bottom: 20px;
     .gallery__heading {
         display: flex;
+        width: $bodySize;
         margin: 18px 0 16px 4px;
         padding-bottom: 65px;
         justify-content: space-between;
@@ -139,11 +133,10 @@ h2, h3 {
             padding-left: 20px;
             word-spacing: 1px;
             letter-spacing: 1px;
-            color: #3f3f3f;
         }
         p {
             font-size: 1.3rem;
-            color: #3f3f3f;
+            color: $headingColor;
         }
     }
     .gallery__images {
@@ -157,8 +150,6 @@ h2, h3 {
             a {
                 width: 25vw;
                 margin-right: 15px;
-                display: flex;
-                justify-content: center;
                 img {
                     width: 23.7vw;
                     height: 290px;
@@ -189,7 +180,7 @@ h2, h3 {
             color: white;
             padding: 8% 0;
             text-align: center;
-            width: 100%;
+            width: $bodySize;
             font-size: 1.1rem;
         }
     }
@@ -231,7 +222,7 @@ h2, h3 {
     align-items: center;
     .footer__list {
         display: flex;
-        width: 100%;
+        width: $bodySize;
         justify-content: center;
         margin: 68px 0 60px 0;
         .footer__list-item {
@@ -241,7 +232,7 @@ h2, h3 {
             a {
                 padding-left: 45px;
                 font-size: 1.1rem;
-                width: 100%;
+                width: $bodySize;
                 text-align: center;
                 color: blue;
                 text-decoration: none;
@@ -255,7 +246,7 @@ h2, h3 {
         margin: 10px 0 70px 0;
     }
 }
-
+//Adaptive laptops
 @media only screen and (max-width: 1200px) {
     .header {
         .menu {
@@ -279,6 +270,7 @@ h2, h3 {
         }
     }
 }
+//Adaptive big tablets
 @media only screen and (max-width: 1000px) {
     .header {
         .menu {
@@ -311,10 +303,11 @@ h2, h3 {
         }
     }
 }
+//Adaptive tablets
 @media only screen and (max-width: 720px) {
     .header {
         .menu {
-            width: 100%;
+            width: $bodySize;
         }
     }
     .gallery {
@@ -357,6 +350,7 @@ h2, h3 {
         }
     }
 }
+//Adaptive small tablets
 @media only screen and (max-width: 580px) {
     .footer {
         .footer__list {
