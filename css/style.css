@@ -14,7 +14,8 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 0;
+  font-family: 'Rubik', sans-serif;
   line-height: 1; }
 
 ol, ul {
@@ -109,8 +110,7 @@ h2, h3 {
         margin-bottom: 80px;
         margin-right: 10px;
         font-size: 2.8rem;
-        letter-spacing: 1px;
-        word-spacing: 7px;
+        letter-spacing: 3px;
         font-weight: bold;
         text-align: center; }
 
@@ -215,10 +215,10 @@ h2, h3 {
     margin: 22px 0 27px 0;
     font-size: 1.6rem;
     text-align: center;
-    font-weight: bold; }
-
-.portfolio:last-of-type h2 {
-  color: black; }
+    font-weight: bold;
+    color: black; }
+  .portfolio:last-of-type p {
+    line-height: 40px; }
 
 .footer {
   display: flex;
@@ -228,16 +228,20 @@ h2, h3 {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 78px 0 60px 0; }
+    margin: 68px 0 60px 0; }
     .footer .footer__list .footer__list-item {
-      padding: 0 1.4%;
-      width: 6.3%; }
+      display: flex;
+      justify-content: center;
+      width: 9.2%; }
       .footer .footer__list .footer__list-item a {
-        padding: 20px;
+        padding-left: 45px;
         font-size: 1.1rem;
         width: 100%;
+        text-align: center;
         color: blue;
         text-decoration: none; }
+    .footer .footer__list .footer__list-item:last-of-type {
+      margin-right: 1%; }
   .footer p {
     margin: 10px 0 70px 0; }
 
@@ -250,6 +254,7 @@ h2, h3 {
     padding: 0;
     width: 15%; }
     .footer .footer__list .footer__list-item a {
+      padding: 0;
       font-size: 1.1rem; }
   .footer p {
     text-align: center; } }
