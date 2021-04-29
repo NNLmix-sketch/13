@@ -2,24 +2,28 @@
 @import "tools.scss";
 
 .container {
-    width: 1500px;
+    width: 79%;
     margin: 0 auto;
-    border-bottom: 2px solid #d2d2d2;
+    
+}
+h2, h3 {
+   color: #3f3f3f;
 }
 //HEADER
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid #d2d2d2;
     .menu {
-        width: 760px;
+        width: 40%;
         .navig {
             display: flex;
+            justify-content: center;
             font-size: 0;
             .navig__item {
-                // width: 16,66%;
                 font-size: 1rem;
-                padding: 23px 2vw;
+                padding: 23px 1.3vw;
                 a {
                     padding: 30% 0;
                     width: 100%;
@@ -42,30 +46,31 @@
         justify-content: center;
         align-items: center;
         .logo {
-            width: 30%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             align-items: center;
             div {
-                width: 200px;
-                height: 200px;
+                width: 175px;
+                height: 175px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
                 background: #df6267;
-                margin-top: 190px;
+                margin-top: 170px;
                 z-index: -1;
                 img {
                     width: 100px;
                 }
             }
             h1 {
-                padding: 80px 0;
+                padding: 67px 0;
                 margin-bottom: 80px;
-                font-size: 2.5rem;
-                font-weight: bold;
-        
+                margin-right: 10px;
+                font-size: 2.8rem;
+                font-weight: bolder;
+                text-align: center;
             }
         }
     }
@@ -76,37 +81,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid #d2d2d2;
     h2 {
-        margin-top: 120px;
-        padding: 60px 0;
+        margin-top: 90px;
+        padding: 60px 0 45px 0;
         font-size: 1.8rem;
         font-weight: bold;
         color: #3f3f3f;
     }
     p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 400;
         text-align: center;
         color: #8b8989;
-        padding-bottom: 140px;
-        line-height: 40px;
+        padding-bottom: 130px;
+        line-height: 30px;
     }
 }
 .gallery {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     .gallery__heading {
         display: flex;
-        margin: 25px 0;
-        padding-bottom: 70px;
+        margin: 18px 0 16px 0;
+        padding-bottom: 65px;
         justify-content: space-between;
         h3 {
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-weight: bold;
+            padding-left: 20px;
             color: #3f3f3f;
         }
         p {
-            color: #3f3f3f;
+            font-size: 1.28rem;
+            color: #8b7d6b;
         }
     }
     .gallery__images {
@@ -114,13 +123,86 @@
         flex-direction: column;
         .gallery__images-line {
             display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
             a {
+                width: 25vw;
+                margin-right: 15px;
+                display: flex;
+                justify-content: center;
                 img {
-                    width: 460px;
-                    height: 330px;
-                    margin-right: 30px;
+                    width: 23.7vw;
+                    height: 290px;
                 }
             }
         }
+        .gallery__images-line:last-of-type {
+            margin: 0;
+        }
+    }
+}
+.portfolio {
+    border-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #d2d2d2;
+    margin-top: 70px;
+    .portfolio__button {
+        width: 24.5%;
+        height: 75px;
+        margin-top: 50px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background: #df6267;
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 8% 0;
+            text-align: center;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+    }
+    h2 {
+        margin: 22px 0 40px 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 60px;
+        font-size: 1.2rem;
+        line-height: 35px;
+    }
+    
+    p.special {
+        color: #8b7d6b;
+        margin-bottom: 25px;
+    }
+   
+}
+.portfolio:last-of-type h2 {
+    color: black;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer__list {
+        display: flex;
+        margin: 80px 0 60px 0;
+        .footer__list-item {
+            a {
+                padding: 20px;
+                font-size: 1.4rem;
+                width: 100%;
+                text-decoration: none;
+            }
+        }
+    }
+    p {
+        margin-bottom: 70px;
     }
 }
