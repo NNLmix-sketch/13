@@ -28,6 +28,24 @@ h2, h3 {
             .navig__item {
                 font-size: 1rem;
                 height: 65px;
+                &:nth-of-type(1) {
+                    width: 21%;
+                }
+                &:nth-of-type(2) {
+                    width: 26.5%;
+                }
+                &:nth-of-type(3) {
+                    width: 14%;
+                }
+                &:nth-of-type(4) {
+                    width: 11.5%;
+                }
+                &:nth-of-type(5) {
+                    width: 12%;
+                }
+                &:nth-of-type(6) {
+                    width: 16%;
+                }
                 a {
                     padding: 30% $zero;
                     width: $bodySize;
@@ -43,24 +61,6 @@ h2, h3 {
                         color: #fff3cd;
                     }
                 }
-            }
-            .navig__item:nth-of-type(1) {
-                width: 21%;
-            }
-            .navig__item:nth-of-type(2) {
-                width: 26.5%;
-            }
-            .navig__item:nth-of-type(3) {
-                width: 14%;
-            }
-            .navig__item:nth-of-type(4) {
-                width: 11.5%;
-            }
-            .navig__item:nth-of-type(5) {
-                width: 12%;
-            }
-            .navig__item:nth-of-type(6) {
-                width: 16%;
             }
         }
     }
