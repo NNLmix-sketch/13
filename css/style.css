@@ -14,7 +14,7 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: "DejaVu Sans";
   line-height: 1; }
 
 ol, ul {
@@ -51,7 +51,7 @@ table {
       font-size: 0; }
       .header .menu .navig .navig__item {
         font-size: 1rem;
-        padding: 23px 0; }
+        padding: 23px 2vw; }
         .header .menu .navig .navig__item a {
           padding: 30% 0;
           width: 100%;
@@ -80,6 +80,7 @@ table {
         justify-content: center;
         border-radius: 50%;
         background: #df6267;
+        margin-top: 190px;
         z-index: -1; }
         .header .container .logo div img {
           width: 100px; }
@@ -96,14 +97,39 @@ table {
   .main__top h2 {
     margin-top: 120px;
     padding: 60px 0;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: "DejaVu Sans"; }
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3f3f3f; }
   .main__top p {
-    font-size: 24px;
+    font-size: 1.4rem;
     font-weight: 400;
-    font-family: "DejaVu Sans";
+    text-align: center;
+    color: #8b8989;
     padding-bottom: 140px;
     line-height: 40px; }
+
+.gallery {
+  display: flex;
+  flex-direction: column; }
+  .gallery .gallery__heading {
+    display: flex;
+    margin: 25px 0;
+    padding-bottom: 70px;
+    justify-content: space-between; }
+    .gallery .gallery__heading h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #3f3f3f; }
+    .gallery .gallery__heading p {
+      color: #3f3f3f; }
+  .gallery .gallery__images {
+    display: flex;
+    flex-direction: column; }
+    .gallery .gallery__images .gallery__images-line {
+      display: flex; }
+      .gallery .gallery__images .gallery__images-line a img {
+        width: 460px;
+        height: 330px;
+        margin-right: 30px; }
 
 /*# sourceMappingURL=style.css.map */
