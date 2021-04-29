@@ -14,7 +14,6 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     .menu {
         width: 40%;
         margin-left: 2.2%;
@@ -112,6 +111,7 @@ h2, h3 {
         margin-top: 90px;
         padding: 60px 0 45px 0;
         font-size: 1.8rem;
+        text-align: center;
         font-weight: bold;
         color: #3f3f3f;
     }
@@ -136,6 +136,7 @@ h2, h3 {
         h3 {
             font-size: 1.5rem;
             font-weight: bold;
+            text-align: center;
             padding-left: 20px;
             word-spacing: 1px;
             letter-spacing: 1px;
@@ -197,6 +198,7 @@ h2, h3 {
     h2 {
         margin: 22px 0 44px 0;
         font-size: 1.6rem;
+        text-align: center;
         font-weight: bold;
     }
     p {
@@ -223,7 +225,6 @@ h2, h3 {
         display: flex;
         width: 100%;
         justify-content: center;
-        // padding: 0 10px;
         margin: 65px 0 60px 0;
         .footer__list-item {
             padding: 0 1.4%;
@@ -239,5 +240,117 @@ h2, h3 {
     }
     p {
         margin: 10px 0 70px 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header {
+        .menu {
+            width: 60%;
+            margin: 0;
+        }
+    }
+    .footer {
+        .footer__list {
+            .footer__list-item {
+                padding: 0;
+                width: 15%;
+                a {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .header {
+        .menu {
+            width: 80%;
+            .navig {
+                .navig__item {
+                    width: 16.66%;
+                }
+            }
+        }
+    }
+    .gallery {
+        .gallery__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .gallery__images-line {
+                display: flex;
+                margin: 0;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    width: 45vw;
+                    img {
+                        width: 42vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 720px) {
+    .header {
+        .menu {
+            width: 100%;
+        }
+    }
+    .gallery {
+        .gallery__heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                padding-bottom: 20px;
+            }
+        }
+        .gallery__images {
+            flex-direction: column;
+            .gallery__images-line {
+                a {
+                    margin-bottom: 30px;
+                    width: 80vw;
+                    img {
+                        width: 78vw;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio {
+        .portfolio__button {
+            width: 50%;
+        }
+    }
+    .footer {
+        .footer__list {
+            width: 96%;
+            .footer__list-item {
+                width: 19%;
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 580px) {
+    .footer {
+        .footer__list {
+            .footer__list-item {
+                a {
+                    font-size: 0.8rem;
+                }
+            }
+        }
     }
 }
